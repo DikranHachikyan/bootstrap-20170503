@@ -16,10 +16,57 @@
 	<style>
 		h2, .h2 {
 		    font-size: 26px;
+		}
+		body{
+			padding-top: 70px;
+			padding-bottom: 70px;
 		}		
 	</style>	
 </head>
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="container-fluid">
+    		<div class="navbar-header">
+    			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+    			<span class="sr-only">Toggle Navigation</span>
+    			<span class="icon-bar"></span>	
+    			<span class="icon-bar"></span>	
+    			<span class="icon-bar"></span>	
+    			</button>
+    			<a href="#" class="navbar-brand">NZ Tours and Adventures</a>
+    		</div> <!-- navbar header-->
+    		<div class="collapse navbar-collapse" id="main-menu">
+    			<ul class="nav navbar-nav navbar-right">
+    				<li class="active"><a href="#">Home</a></li>
+    				<li><a href="#">About</a></li>
+    				<li><a href="#">Services</a></li>
+    				<li><a href="#">Contacts</a></li>
+    			</ul>
+    		</div> <!-- navbar collapse -->
+    	</div> <!-- container fluid-->
+    </nav>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    	<div class="container-fluid">
+    		<div class="navbar-header">
+    			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bottom-menu">
+    			<span class="sr-only">Toggle Navigation</span>
+    			<span class="icon-bar"></span>	
+    			<span class="icon-bar"></span>	
+    			<span class="icon-bar"></span>	
+    			</button>
+    			<a href="#" class="navbar-brand">NZ Tours and Adventures</a>
+    		</div> <!-- navbar header-->
+    		<div class="collapse navbar-collapse" id="bottom-menu">
+    			<ul class="nav navbar-nav navbar-right">
+    				<li class="active"><a href="#">Home</a></li>
+    				<li><a href="#">About</a></li>
+    				<li><a href="#">Services</a></li>
+    				<li><a href="#">Contacts</a></li>
+    			</ul>
+    		</div> <!-- navbar collapse -->
+    	</div> <!-- container fluid-->
+    </nav>
+
     <div class="visible-lg">Large Device</div> 
     <div class="visible-md">Medium Device</div> 
     <div class="visible-sm">Small Device</div> 
@@ -29,15 +76,19 @@
 			<article class="col-sm-12">
 			   <div class="row">	
 			       <header class="col-sm-4">
-			       		<img src="pics-large/pic1-320x240.jpg" class="img-responsive" alt="">
+			       			<img src="pics-large/pic1-320x240.jpg" class="img-responsive img-thumbnail center-block hidden-print" alt="">	
 			       </header>
 			       <div class="col-sm-8">
+			       	   <!--	
+			       	   <img src="pics-small/pic1.jpg" class="img-responsive pull-right" alt="">	
+			       	   -->
 					   <section>
-					   		<h2>Lorem ipsum dolor sit amet</h2>
+					   		<h2 class="text-center">Lorem ipsum dolor sit amet</h2>
 					   		<p>Consectetur adipisicing elit. Minus perspiciatis quae, cum fugit repellat alias illum! Nisi facere corporis, velit voluptatum sapiente deleniti, similique tempora nostrum consequatur, atque sit sed.</p>
 					   </section>
 					   <footer>
-					   		<a href="#">Read More</a>
+					   		<a href="#" class="btn btn-primary btn-lg btn-block visible-xs">Read More</a>
+					   		<a href="#" class="btn btn-primary hidden-xs">Read More</a>
 					   </footer>
 				   </div> <!-- section + footer article 1 -->
 			   </div> <!-- inner row article 1-->
@@ -46,15 +97,15 @@
 			<article class="col-sm-12">
 		       <div class="row">	
 			       <header class="col-sm-4">
-		       		  <img src="pics-large/pic2-320x240.jpg" class="img-responsive" alt="">
+		       		  <img src="pics-large/pic2-320x240.jpg" class="img-responsive img-thumbnail center-block hidden-print" alt="">
 		       	   </header>
 		           <div class="col-sm-8">
 					   <section>
-					   		<h2>Ex quibusdam nihil eius</h2>
+					   		<h2 class="text-center">Ex quibusdam nihil eius</h2>
 					   		<p>Ex quibusdam nihil eius, quaerat sapiente id laudantium earum consequuntur facere harum. Pariatur, consequuntur debitis inventore amet fugit error esse! Impedit, voluptate.</p>
 					   </section>
 					   <footer>
-					   		<a href="#">Read More</a>
+					   		<a href="#" class="btn btn-primary">Read More</a>
 					   </footer>
 			       </div> <!-- section + footer article 2 -->
 			   </div> <!-- inner row article 2-->
@@ -63,15 +114,15 @@
 			<article class="col-sm-12">
 		        <div class="row">	
 			       <header class="col-sm-4">
-		       		 <img src="pics-large/pic3-320x240.jpg" class="img-responsive" alt="">
+		       		 <img src="pics-large/pic3-320x240.jpg" class="img-responsive img-thumbnail center-block hidden-print" alt="">
 		           </header>
 		           <div class="col-sm-8">
 					   <section>
-					   		<h2>Vel delectus, veniam exercitationem!</h2>
+					   		<h2 class="text-center">Vel delectus, veniam exercitationem!</h2>
 					   		<p>Vel delectus, veniam exercitationem! Tempora perspiciatis delectus suscipit, iste repellendus expedita iusto, impedit quaerat itaque harum repudiandae earum, aliquid sunt porro voluptatibus?</p>
 					   </section>
 					   <footer>
-					   		<a href="#">Read More</a>
+					   		<a href="#" class="btn btn-primary">Read More</a>
 					   </footer>
 					</div> <!-- section + footer article 2 -->   
 				</div> <!-- inner row article 2-->
@@ -80,15 +131,15 @@
 			<article class="col-sm-12">
 		        <div class="row">	
 			        <header class="col-sm-4">
-		       		  <img src="pics-large/pic4-320x240.jpg" class="img-responsive" alt="">
+		       		  <img src="pics-large/pic4-320x240.jpg" class="img-responsive img-thumbnail center-block hidden-print" alt="">
 		            </header>
 		            <div class="col-sm-8">
 					   <section>
-					   		<h2>Nihil quam mollitia magni eius, aperiam</h2>
+					   		<h2 class="text-center">Nihil quam mollitia magni eius, aperiam</h2>
 					   		<p>Nihil quam mollitia magni eius, aperiam, dolore error sequi consequuntur quas, porro numquam recusandae earum assumenda amet ipsa delectus temporibus, architecto ullam.</p>
 					   </section>
 					   <footer>
-					   		<a href="#">Read More</a>
+					   		<a href="#" class="btn btn-primary">Read More</a>
 					   </footer>
 					</div> <!-- section + footer article 4 -->   
 				</div> <!-- inner row article 4-->   
@@ -97,15 +148,15 @@
             <article class="col-sm-12">
 		        <div class="row">	
 			        <header class="col-sm-4">
-		       			<img src="pics-large/pic5-320x240.jpg" class="img-responsive" alt="">
+		       			<img src="pics-large/pic5-320x240.jpg" class="img-responsive img-thumbnail center-block hidden-print" alt="">
 		       		</header>
 		       		<div class="col-sm-8">
 					   <section>
-					   		<h2>Maiores quasi illum</h2>
+					   		<h2 class="text-center">Maiores quasi illum</h2>
 					   		<p>Maiores quasi illum facilis error eveniet eum consequuntur dicta numquam amet quod neque repudiandae, quas tempore, temporibus quae tenetur accusamus culpa inventore.</p>
 					   </section>
 					   <footer>
-					   		<a href="#">Read More</a>
+					   		<a href="#" class="btn btn-primary">Read More</a>
 					   </footer>
 					</div> <!-- section + footer article 5 -->   
 				</div> <!-- inner row article 5-->     
@@ -114,15 +165,15 @@
             <article class="col-sm-12">
 		        <div class="row">	
 			        <header class="col-sm-4">
-		       			<img src="pics-large/pic6-320x240.jpg" class="img-responsive" alt="">
+		       			<img src="pics-large/pic6-320x240.jpg" class="img-responsive img-thumbnail center-block hidden-print" alt="">
 		       		</header>
 		       		<div class="col-sm-8">
 					   <section>
-					   		<h2>Nulla non esse aliquam architecto</h2>
+					   		<h2 class="text-center">Nulla non esse aliquam architecto</h2>
 					   		<p>Nulla non esse aliquam architecto soluta error unde atque numquam, commodi dolores ratione eum voluptates praesentium consequatur ea libero voluptatibus doloremque ad.</p>
 					   </section>
 					   <footer>
-					   		<a href="#">Read More</a>
+					   		<a href="#" class="btn btn-primary">Read More</a>
 					   </footer>
 					</div> <!-- section + footer article 6 -->   
 				</div> <!-- inner row article 6-->      
