@@ -88,10 +88,14 @@
 		    	var img = images[index];
 
 		    	$('#pic').find('h2').html(img.title);
-		    	$('#pic').find('a').attr('title',img.title);
-		    	$('#pic').find('a').attr('href',img.url);
-		    	$('#pic').find('img').attr('src', path + img.src + imgSize + imgExt);
-		    	$('#pic').find('img').attr('alt', img.alt);	
+		    	$('#pic').find('a').attr({'title':img.title, 
+		    		                      'href':img.url
+		    		                  });
+		    	
+		    	$('#pic').find('img').attr({'src': path + img.src + imgSize + imgExt,
+		    								'alt': img.alt
+		    							});
+		    		
 		    	$('#pic').find('p').html(img.info);
 
 		    });//on click btn next
