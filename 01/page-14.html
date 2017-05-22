@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+	
+	</style>	
+</head>
+<body>
+   <div>
+    <a href="#">
+   	  <img src="pics-large/pic1-320x240.jpg" alt="" id="pic">
+   	</a>
+   </div>
+   <div>
+   	<button id="prv">Prev</button>	
+   	<button id="nxt">Next</button>	
+   </div>
+	<script src="js/jquery.min.js"></script>
+	<!--
+	 <script src="js/bootstrap.min.js"></script>
+	-->
+	<script>
+		$(document).ready(function(){
+			var images = ['pic1','pic2', 'pic3','pic4'];
+			var index = 0;
+			var imgSize = '-320x240';
+			var imgExt = '.jpg';
+		    var path = 'pics-large/';
+		    
+		    console.log('length=', images.length);
+
+		    $('#nxt').click(function(){
+		    	index++; //index= index+1
+		    	if( index >= images.length ){
+		    		index = 0;
+		    	}
+		    	changeImage('#pic',path + images[index] + imgSize + imgExt);
+		    });//on click btn next
+
+		});//on document ready
+
+		function changeImage(selector, image){
+            // pics-large/pic2-320x240.js
+            $(selector).attr('src', image);
+		}
+	</script>
+</body>
+</html>
