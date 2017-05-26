@@ -1,7 +1,7 @@
 [
     {
       "url": "http://btv.bg",
-      "src": "pic2.jpg",
+      "src": "pic2-320x240.jpg",
       "thumbnail": "pic2.jpg",
       "title": "Millennium Monument",
       "alt": "Millennium Monument",
@@ -9,7 +9,7 @@
     },
     {
       "url": "http://dir.bg",
-      "src": "pic1.jpg",
+      "src": "pic1-320x240.jpg",
       "thumbnail": "pic1.jpg",
       "title": "City Center",
       "alt": "City Center",
@@ -17,7 +17,7 @@
     },
     {
       "url": "http://abv.bg",
-      "src": "pic3.jpg",
+      "src": "pic3-320x240.jpg",
       "thumbnail": "pic3.jpg",
       "title": "City Attractions",
       "alt": "City Attractions",
@@ -25,7 +25,7 @@
     },
     {
       "url": "http://linux-bg.org",
-      "src": "pic4.jpg",
+      "src": "pic4-320x240.jpg",
       "thumbnail": "pic4.jpg",
       "title": "Avon River",
       "alt": "Avon River",
@@ -33,7 +33,7 @@
     },
      {
       "url": "http://linux-bg.org",
-      "src": "pic6.jpg",
+      "src": "pic6-320x240.jpg",
       "thumbnail": "pic6.jpg",
       "title": "Hagley Park",
       "alt": "Hagley Park",

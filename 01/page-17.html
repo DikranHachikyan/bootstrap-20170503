@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+<!--
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+#gallery {
+    list-style: none;
+}
+
+#gallery li+li {
+    display: none;
+}
+
+
+#gallery a {
+    text-decoration: none;
+    display: block;
+}	
+	</style>	
+</head>
+<body>
+   <ul id="gallery">
+   
+   </ul>
+   
+   	<button id="prv">Prev</button>	
+   	<button id="nxt">Next</button>	
+    
+	<script src="js/jquery.min.js"></script>
+	
+	 <script src="js/bootstrap.min.js"></script>
+	
+	<div id="item" style="display: none">
+   <li>
+    <a href="">
+     <h3></h3>
+     <img src="" alt="" class="img-responsive">
+     <p></p>
+     </a>
+   </li> 
+  </div>
+	<script>
+		$(document).ready(function(){
+			var path='./pics-large/';
+
+      //console.log('before get');
+      $.get('./js/pictures-ajax.json', function(data){
+          console.log('data:',data);
+          $.each(data, function(index,item){
+            //1. клонираме li в #item
+            var li = $('#item li').clone();
+
+            //2. попълваме данните в li
+            li.find('h3').html(item.title);
+            li.find('img').attr({'src': path + item.src, 'alt':item.alt});
+            li.find('p').html(item.info);
+            li.find('a').attr('href',item.url);
+
+            //3.поставяме li в ul
+            $('#gallery').append(li);
+
+          });//for each item in data
+      });//get json data
+			//console.log('after get:',data );
+
+		});//on document ready
+
+	
+	</script>
+</body>
+</html>
